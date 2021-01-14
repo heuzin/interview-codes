@@ -19,10 +19,10 @@ class Array {
         return lastItem
     }
     remove(n) { 
-        delete this.data[n];
         for (let i = n; i < this.length - 1; i++) {
             this.data[i] = this.data[i + 1];
         }
+        delete this.data[this.length - 1]
         this.length = this.length - 1;    
     }
 }
