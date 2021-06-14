@@ -16,7 +16,7 @@ const twoSum = function(nums, target) {
     }
 
     const arrayOfIndex = []
-    for (let j = 0; j < nums.length -1; j++) {
+    for (let j = 0; j < nums.length; j++) {
         const dif = target - nums[j]
         if(cache.hasOwnProperty(dif) && j !== cache[dif]) {
             arrayOfIndex.push(j)
