@@ -53,9 +53,9 @@ var findMedianSortedArrays = function(nums1, nums2) {
     if(sortedArray.length > 1) {
     let midNumber = Math.floor(sortedArray.length / 2)
 
-        if (midNumber % 2 === 0) {
+        if (sortedArray.length % 2 === 0) {
             console.log((sortedArray[midNumber] + sortedArray[midNumber -1]) / 2)
-        } else {
+        } else if (!sortedArray.length % 2 === 0) {
             console.log(sortedArray[midNumber])
         }
     } else {
